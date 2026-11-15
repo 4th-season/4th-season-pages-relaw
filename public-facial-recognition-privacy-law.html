@@ -1,0 +1,107 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>공공장소 얼굴인식과 개인정보 — CCTV 영상은 언제 특정인 식별에 사용할 수 있나 | Re:Law</title>
+<meta name="description" content="공공장소 얼굴인식과 개인정보: CCTV 촬영·저장과 얼굴 특징정보 생성·수사 명단 대조는 법적으로 다릅니다. 개인정보 보호법 제18·23·25조와 시행령 제18조, 실제 사례 4가지로 구분합니다.">
+<link rel="canonical" href="https://4th-season.com/public-facial-recognition-privacy-law">
+<style>
+:root{--ink:#202a2f;--paper:#f7f8f7;--deep:#263a43;--accent:#607c84;--line:#d9e0e1;--muted:#6d787b;--soft:#edf2f3;--white:#fff;--max:980px}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif;line-height:1.92}.article{max-width:var(--max);margin:auto;padding:34px 22px 108px}a{color:#426b77;text-underline-offset:3px}.hero{padding:58px 48px;border-radius:30px;background:linear-gradient(145deg,#243942,#60767f);color:#fff}.eyebrow{font-size:.76rem;font-weight:900;letter-spacing:.14em;color:#dcebed}.hero h1{font-size:clamp(2rem,5vw,3.35rem);line-height:1.16;letter-spacing:-.055em;margin:10px 0 15px}.hero p{color:#e9eff0}.article h2{margin:72px 0 20px;font-size:1.8rem;line-height:1.35;letter-spacing:-.04em}.article h3{line-height:1.45}.article p{margin:0 0 1.35em}.scene{margin:30px 0;padding:27px 29px;border-left:4px solid var(--accent);background:#fff}.note{margin:30px 0;padding:25px;border-radius:18px;background:var(--soft)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:27px 0}.grid article{padding:23px;border:1px solid var(--line);border-radius:18px;background:#fff}.grid b{display:block;color:var(--accent);font-size:.8rem}.grid h3{margin:7px 0 9px}.steps{display:grid;gap:0;border-top:1px solid var(--line);margin:26px 0}.step{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:21px 0;border-bottom:1px solid var(--line)}.step span{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--deep);color:#fff;font-weight:900}.step h3{margin:0 0 7px}.warning{margin:30px 0;padding:25px;border:1px solid var(--line);border-radius:18px;background:#fff}.final{margin-top:68px;padding:31px;border-radius:22px;background:var(--deep);color:#fff}.final h2{margin:0 0 14px;color:#fff}.final p{color:#e8eceb}.source{margin-top:42px;padding:20px 23px;border:1px solid var(--line);border-radius:16px;background:#fff;font-size:.88rem}.source li{margin:8px 0}.back{display:inline-block;margin:0 0 22px;font-weight:850}@media(max-width:760px){.article{padding:18px 15px 70px}.hero{padding:37px 23px}.grid{grid-template-columns:1fr}}
+
+/* R2 reading additions: responsive diagrams, tables and evidence panels */
+.article{max-width:1010px}.hero{position:relative;overflow:hidden}
+.hero:after{content:'';position:absolute;width:180px;height:180px;border:1px solid #ffffff2a;border-radius:50%;right:-55px;top:-65px;pointer-events:none}
+.logic-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:26px 0}
+.logic-step{padding:20px 16px;border-radius:14px;background:#e8eff0;border:1px solid #cfdddd;min-width:0}
+.logic-step span{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:#294b52;color:white;width:30px;height:30px;font-weight:850;font-size:14px}
+.logic-step strong{display:block;margin:10px 0 7px;line-height:1.45;color:#244952}
+.logic-step p{font-size:.92rem;line-height:1.75;margin:0;color:#4b5b61}
+.table-scroll{overflow-x:auto;margin:26px 0;border:1px solid #cddddd;border-radius:14px;background:white}
+.r2-table{width:100%;min-width:590px;border-collapse:collapse;line-height:1.7;font-size:.94rem}
+.r2-table th{text-align:left;padding:15px 16px;background:#285058;color:white}
+.r2-table td{padding:15px 16px;vertical-align:top;border-bottom:1px solid #e5ebec}
+.r2-table tbody tr:last-child td{border-bottom:0}
+.r2-table tr:nth-child(even) td{background:#f7faf9}
+.r2-table strong{color:#264b53}
+.case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:26px 0}
+.case-card{padding:24px;border:1px solid #d0dfe0;border-radius:17px;background:#fff}
+.case-card small{font-weight:850;color:#386772;letter-spacing:.07em}
+.case-card h3{margin:9px 0;font-size:1.13rem;color:#243f45}
+.case-card p{margin:0;font-size:.96rem;line-height:1.85}
+.article section>h3.r2-sub{font-size:1.36rem;margin:40px 0 16px;color:#2b4d56}
+.r2-aside{background:#f0f6f4;border-left:4px solid #4c8183;border-radius:0 14px 14px 0;padding:22px 24px;margin:25px 0}
+.r2-aside strong{color:#234e56}
+.r2-aside p{margin:8px 0 0;font-size:.98rem}
+.evidence{font-size:.92rem;color:#52676d}
+@media(max-width:700px){.logic-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.case-grid{grid-template-columns:1fr}.hero{padding:34px 24px;border-radius:19px}.article{padding:16px 15px 85px}.article h2{font-size:1.45rem;margin-top:52px}.logic-step{padding:16px}.scene,.note,.warning{padding:20px}}
+@media(max-width:340px){.logic-flow{grid-template-columns:1fr}}
+</style><link id="s4-article-nav-css" rel="stylesheet" href="/assets/common/article-nav.css?v=20260928v1">
+<link id="s4-stdict-search-css" rel="stylesheet" href="/assets/common/stdict-search.css?v=20260927v1">
+</head><body>
+<div id="s4-stdict-search" class="s4-dict-search" data-endpoint="/api/stdict" aria-label="표준국어대사전 검색">
+<form class="s4-dict-form" role="search" autocomplete="off">
+<span class="s4-dict-badge">사전</span>
+<label class="s4-dict-sr" for="s4-dict-input">표준국어대사전 검색어</label>
+<input id="s4-dict-input" class="s4-dict-input" type="search" inputmode="search" maxlength="80" placeholder="표준국어대사전" aria-label="표준국어대사전 검색">
+<button class="s4-dict-submit" type="submit" aria-label="사전 검색">⌕</button>
+</form>
+<div class="s4-dict-panel" hidden aria-live="polite"></div>
+</div>
+<nav id="fs-common-menu" class="fs-common-menu" data-sitejob-marker="GLOBAL_ARTICLE_NAV_V2" aria-label="개별 글 공통 메뉴"><div class="fsn-inner"><a class="fsn-exit" href="/world/relaw/digital/">← 상위 지도</a><a class="fsn-brand" href="/">4TH SEASON</a><a class="fsn-domain" href="/learn/">LEARN</a><a class="fsn-domain" href="/world/">WORLD</a><a class="fsn-domain" href="/life/">LIFE</a><a class="fsn-domain insite" href="/insite/">In:Site</a><a class="fsn-series" href="/world/relaw/">Re:Law</a><a class="fsn-map" href="/sitemap/">한눈에 보기</a></div></nav><!-- ARTICLE_ID: RELAW-HOT18-PUBLIC-FACIAL-RECOGNITION-PRIVACY-LAW --><!-- RELAW_HOT18_PUBLIC_FACIAL_RECOGNITION_PRIVACY_LAW_R2_20261011 -->
+<main class="article"><a class="back" href="/inchoice/">← In:Choice</a>
+<section class="hero"><div class="eyebrow">RE:LAW · 디지털 권리</div><h1>공공장소 얼굴인식과 개인정보 — CCTV 영상은 언제 특정인 식별에 사용할 수 있나</h1><p>카메라가 사람을 찍는 것과, 그 얼굴을 숫자화해 특정인과 자동 대조하는 것은 같은 처리 과정이 아닙니다. 2026년 10월 2일 최초 작성 내용을 보존하면서 2026년 10월 11일 현행 개인정보 보호법을 재검증한 기준으로 공공 CCTV와 얼굴인식 사이에 놓인 법적 문턱을 분리해 봅니다.</p></section>
+<section><h2>거리의 CCTV가 갑자기 ‘얼굴 검색기’가 되는 순간</h2><div class="scene"><p>지하철역 출입구에 CCTV가 설치되어 있다고 가정해 보겠습니다. 평소에는 안전사고나 범죄가 발생했을 때 영상을 확인합니다. 그런데 어느 날 이 카메라가 지나가는 모든 사람의 얼굴 특징을 자동으로 추출하고, 수배자 목록이나 특정 데이터베이스와 실시간으로 대조하기 시작합니다.</p><p>겉으로 보면 같은 카메라입니다. 하지만 법적으로는 처리의 성격이 크게 달라집니다. 첫 단계는 영상을 촬영·보관하는 것이고, 다음 단계는 얼굴에서 식별용 특징을 만들어 특정 사람인지 판단하는 것입니다. 무엇을 찍었는지만이 아니라 <strong>그 영상으로 무엇을 하느냐</strong>가 중요해지는 지점입니다.</p></div></section>
+<section class="r2-panel" aria-label="얼굴인식 법률검토 네 단계">
+<h2>같은 CCTV라도 네 단계를 각각 통과해야 합니다</h2>
+<p>역 앞에 카메라가 있다는 사실만으로 지나가는 사람의 얼굴을 상시 검색할 권한까지 생기지는 않습니다. 법률 검토는 다음 네 단계를 나누어 시작합니다.</p>
+<div class="logic-flow" role="list">
+<div class="logic-step" role="listitem"><span>1</span><strong>영상 촬영·저장</strong><p>공개된 장소인지, CCTV 설치 목적과 제25조의 허용 사유가 있는지</p></div>
+<div class="logic-step" role="listitem"><span>2</span><strong>얼굴 특징값 생성</strong><p>식별용으로 가공했다면 민감정보 처리 근거가 따로 있는지</p></div>
+<div class="logic-step" role="listitem"><span>3</span><strong>명단 대조·추적</strong><p>원래 목적 내 이용인지, 다른 목적인지, 별도 법적 근거가 있는지</p></div>
+<div class="logic-step" role="listitem"><span>4</span><strong>사후 조치·보관</strong><p>오인식 재확인, 접근권한, 기록보존·삭제와 권리구제가 가능한지</p></div>
+</div>
+<p class="evidence">근거: 개인정보 보호법 제18조·제23조·제25조, 같은 법 시행령 제18조·제25조. 법률이 네 단계의 명칭을 그대로 정한 것은 아니며 독자의 판단을 위한 분석 순서입니다.</p>
+</section>
+<section><h2>공개된 장소의 CCTV는 범죄예방·수사를 위해 설치할 수 있다</h2><p>2026년 9월 11일부터 시행 중인 개인정보 보호법 제25조는 공개된 장소의 고정형 영상정보처리기기를 원칙적으로 제한하면서 예외를 열어 둡니다. 법령이 구체적으로 허용하는 경우, 범죄 예방 및 수사를 위해 필요한 경우, 시설 안전·관리와 화재 예방, 교통단속, 교통정보 수집·분석·제공 등입니다.</p><p>따라서 “공공장소 CCTV는 모두 불법”도 아니고 “범죄예방 목적이면 무엇이든 가능”도 아닙니다. 설치 목적과 필요성이 먼저 존재해야 하고, 안내판을 통해 설치 목적·장소·촬영 범위·시간·관리책임자 등을 알리는 절차가 뒤따릅니다. 공공기관이 CCTV를 설치하려는 경우 시행령은 행정예고나 주민 설명회·설문조사 등 관계 전문가와 이해관계인의 의견수렴 절차도 두고 있습니다.</p><div class="note"><strong>첫 번째 구분</strong><p>CCTV를 합법적으로 설치할 수 있다는 사실이, 그 영상에서 얼굴 특징을 뽑아 자동 식별에 이용하는 행위까지 곧바로 허용한다는 뜻은 아닙니다.</p></div></section>
+<section><h2>얼굴 사진과 ‘식별용 얼굴 특징정보’는 구분해야 한다</h2><div class="table-scroll" role="region" aria-label="영상정보와 생체인식정보의 차이" tabindex="0">
+<table class="r2-table"><thead><tr><th scope="col">처리 장면</th><th scope="col">핵심 정보</th><th scope="col">법적 확인사항</th></tr></thead>
+<tbody>
+<tr><td><strong>사고 뒤 영상 확인</strong></td><td>얼굴이 보이는 CCTV 영상</td><td>촬영·보관 목적과 적법한 이용 범위. 영상에 사람이 나온다는 이유만으로 그 자체가 모두 식별용 생체정보인 것은 아닙니다.</td></tr>
+<tr><td><strong>출입구 1:1 인증</strong></td><td>본인 얼굴에서 추출한 특징값과 등록정보 대조</td><td>특징값이 특정인 식별·인증용이라면 민감정보 처리 근거가 필요합니다. 단순한 안내판만으로 별도 동의가 된 것은 아닙니다.</td></tr>
+<tr><td><strong>거리의 1:N 자동검색</strong></td><td>여러 보행자의 특징값을 명단과 연속 대조</td><td>민감정보 처리 근거 외에도 대상·장소·기간·목적·오인식 조치의 범위를 엄격히 검토해야 합니다.</td></tr>
+<tr><td><strong>수사기관에 영상 제공</strong></td><td>특정 사건 관련 저장 영상</td><td>요청기관의 법적 권한, 제공 근거와 범위. 수사 목적을 말하는 것만으로 무제한 제공이 정당화되지는 않습니다.</td></tr>
+</tbody></table></div><p>사람의 얼굴이 찍힌 영상은 그 사람을 알아볼 수 있다면 개인정보가 될 수 있습니다. 그러나 얼굴인식 시스템은 보통 여기서 한 단계 더 나아갑니다. 얼굴의 위치와 형태를 분석하고, 눈·코·윤곽 사이의 관계 같은 특징을 기술적으로 추출해 비교 가능한 값으로 만든 뒤 등록된 사람과 같은지 대조합니다.</p><p>개인정보 보호법 시행령 제18조는 “개인의 신체적, 생리적, 행동적 특징에 관한 정보로서 특정 개인을 알아볼 목적으로 일정한 기술적 수단을 통해 생성한 정보”를 민감정보의 범위에 포함합니다. 즉 얼굴이 보이는 원본 영상과 특정인을 식별하기 위해 생성한 얼굴 특징정보는 법적 위험도가 같지 않습니다.</p><p>개인정보보호위원회도 2021년 생체정보 보호 가이드라인을 개정하면서 일반적인 생체정보와 인증·식별 목적으로 기술적으로 처리되는 생체인식정보를 구분했습니다. 핵심은 얼굴이라는 신체 특징 자체보다 <strong>특정인을 인증하거나 식별하기 위해 기술적으로 처리했는가</strong>입니다.</p></section>
+<section><h2>생체인식정보를 처리하려면 별도의 법적 근거가 필요하다</h2><p>민감정보는 일반 개인정보보다 엄격하게 다뤄집니다. 개인정보 보호법 제23조는 원칙적으로 민감정보 처리를 제한하고, 예외적으로 정보주체에게 필요한 사항을 알린 뒤 다른 개인정보 처리 동의와 <strong>별도로 동의</strong>를 받았거나, 법령에서 민감정보 처리를 요구하거나 허용하는 경우에 처리할 수 있도록 합니다.</p><p>공공기관은 제15조에 따라 법령상 소관 업무 수행을 위해 불가피한 경우 개인정보를 처리할 수 있습니다. 그러나 얼굴 특징을 식별 목적으로 생성해 민감정보로 처리하는 단계에서는 제23조의 더 엄격한 요건도 함께 검토해야 합니다. “치안 목적”이나 “공익 목적”이라는 넓은 설명만으로 민감정보 처리의 문턱이 자동으로 사라지는 것은 아닙니다.</p><p>특정 수사 상황에서 다른 법률이 구체적인 권한을 두거나 개인정보 보호법상 목적 외 이용·제공의 예외가 적용되는 경우에는 결론이 달라질 수 있습니다. 그래서 얼굴인식의 적법성은 기관의 이름보다 <strong>구체적인 법률 근거, 목적, 대상, 범위, 처리방식</strong>을 확인해야 판단할 수 있습니다.</p></section>
+<section><h3 class="r2-sub">2026년 개인정보위도 ‘안면인증=민감정보 처리’라는 기준을 다시 확인했다</h3><p>2026년 5월 개인정보보호위원회는 휴대전화 개통 시 안면인증 시범운영을 조사한 뒤 과학기술정보통신부에 개선을 권고했습니다. 신분증 얼굴사진과 실시간 얼굴사진에서 특징점을 추출해 동일인 여부를 판별하는 과정에서 생체인식정보가 처리된다는 점을 확인했고, 이런 정보는 개인정보 보호법상 민감정보이므로 정보주체의 동의 또는 법령상 근거가 필요하다고 설명했습니다.</p><p>이 사건에서 중요한 부분은 단순히 “동의를 받았느냐”만이 아니었습니다. 안면인증을 거부하기 어려운 구조라면 동의가 실질적인 선택인지 문제가 될 수 있고, 제도 도입 자체의 필요성과 적용 범위·방법의 실효성·적절성·비례성을 미리 검토해야 한다고 개인정보위는 보았습니다. 또 가능한 경우 대체수단을 두거나 명확한 법령 근거를 마련하고, 처리되는 정보를 최소화하는 방식으로 제도를 설계할 것을 권고했습니다.</p><p>휴대전화 개통 사건은 공공장소 감시 사건과 동일하지 않습니다. 다만 얼굴 특징을 추출·대조하는 기술을 도입할 때 “기술적으로 가능하다”는 사실만으로 충분하지 않고, 처리 근거와 필요성·비례성·대체수단을 별도로 검토해야 한다는 최근의 감독 기준을 보여줍니다.</p></section>
+<section><h2>CCTV의 설치 목적과 얼굴인식의 이용 목적이 다르면 다시 따져야 한다</h2><div class="r2-aside"><strong>안내판과 동의는 같은 절차가 아닙니다.</strong>
+<p>일반적인 CCTV 안내판은 법 제25조에 따라 설치 장소·목적 등을 알리는 조치입니다. 얼굴 특징정보에 대한 민감정보 처리의 근거를 따질 때에는 제23조와 시행령 제18조가 별도로 적용됩니다. <strong>동의가 유일한 경로는 아니며</strong> 법령에서 처리하도록 요구하거나 허용하는 경우도 따로 검토해야 합니다.</p></div><p>CCTV가 원래 시설 안전을 위해 설치됐다고 해도, 나중에 모든 방문객의 얼굴을 수배자 데이터베이스와 대조하는 기능을 붙이면 이용 목적과 위험 수준이 달라집니다. 개인정보 보호법 제18조는 원칙적으로 당초 수집 목적의 범위를 넘어 개인정보를 이용하거나 제3자에게 제공하는 것을 제한합니다.</p><p>목적 외 이용에는 동의, 다른 법률의 특별한 규정, 급박한 생명·신체·재산의 이익, 공공기관의 특정한 법정 업무 수행, 범죄수사 등 법이 정한 예외가 존재합니다. 하지만 예외가 있다는 것과 상시적·포괄적인 얼굴검색이 곧바로 정당화된다는 것은 다른 문제입니다.</p><div class="grid"><article><b>원래 처리</b><h3>사건 발생 후 영상 확인</h3><p>특정 사고·범죄가 발생한 뒤 시간과 장소가 한정된 영상을 사람이 확인하는 방식.</p></article><article><b>추가 처리</b><h3>모든 통행인을 자동 대조</h3><p>카메라에 잡힌 불특정 다수의 얼굴 특징을 생성해 데이터베이스와 계속 비교하는 방식.</p></article></div><p>두 방식은 대상 규모, 자동화 정도, 오인식 위험, 감시의 지속성, 개인정보 침해 가능성이 크게 다르므로 같은 목적 문구만으로 동일하게 평가하기 어렵습니다.</p></section>
+<section><h3 class="r2-sub">‘1대1 인증’과 ‘1대다수 검색’도 위험이 다르다</h3><p>얼굴인식이라고 해도 작동 방식은 다양합니다. 휴대전화 잠금 해제처럼 등록된 한 사람과 현재 사용자가 같은지 확인하는 1:1 인증이 있는 반면, 공공장소 카메라에 잡힌 사람을 수배자나 관심대상 목록 전체와 비교하는 1:N 검색도 있습니다.</p><p>특히 불특정 다수를 대상으로 한 실시간 1:N 검색은 얼굴을 등록한 적도 없는 사람까지 지속적으로 분석 대상에 포함시킬 수 있습니다. 개인정보위는 2023년 생체정보 법·제도 연구반을 출범시키면서 공개된 장소에서 불특정 다수를 대상으로 하는 실시간 얼굴인식이 사생활뿐 아니라 집회·결사의 자유 등 기본권을 침해할 우려가 크다고 공식적으로 지적했습니다.</p><p>이 보도자료가 곧바로 새로운 금지조항을 만든 것은 아닙니다. 다만 규율 필요성을 설명한 정책 자료이므로, 현행 조문과 혼동하지 않고 기본권 위험을 평가하는 참고 기준으로 읽어야 합니다.</p></section>
+<section><h2>오인식은 단순한 기술 오류가 아니라 법적 절차의 문제다</h2><p>얼굴인식 시스템은 확률적 비교를 합니다. 기준값을 낮추면 더 많은 후보를 잡을 수 있지만 잘못된 일치도 늘 수 있고, 높이면 오탐은 줄어들지만 실제 대상을 놓칠 수 있습니다. 촬영 각도, 조명, 마스크, 카메라 해상도, 데이터베이스의 품질도 결과에 영향을 줍니다.</p><p>그래서 얼굴인식 결과가 수사나 출입제한 같은 불이익으로 이어질수록 “시스템이 일치라고 표시했다”는 이유만으로 자동 처분해서는 곤란합니다. 어떤 데이터와 기준으로 비교했는지, 사람이 추가 확인했는지, 오류를 다툴 절차가 있는지, 로그가 남는지, 잘못된 일치가 확인되면 어떻게 정정·삭제하는지가 중요해집니다.</p><p>법적 쟁점은 기술 정확도 하나가 아닙니다. 오탐이 발생했을 때 누가 책임지고, 당사자가 무엇을 알 수 있으며, 어떤 절차로 결과를 뒤집을 수 있는지가 개인정보 보호와 적법절차의 핵심이 됩니다.</p></section>
+<section><h3 class="r2-sub">정확도가 높아도 ‘필요한가’라는 질문은 남는다</h3><p>얼굴인식 시스템의 정확도가 99%에 가깝다고 가정해도 법적 검토가 끝나는 것은 아닙니다. 더 덜 침해적인 방법으로 같은 목적을 달성할 수 있다면 상시적인 얼굴 대조가 필요한지 다시 봐야 합니다. 특정한 중대위험이 발생한 짧은 시간과 좁은 장소에서만 사용하는 방법, 사건 후 영상을 검색하는 방법, 사람이 직접 확인하는 방법 등이 대안이 될 수 있습니다.</p><p>2026년 개인정보위가 안면인증 사건에서 필요성·실효성·적절성·비례성을 사전에 검토하라고 권고한 이유도 여기에 있습니다. 개인정보 보호는 기술을 쓰지 말라는 원칙이 아니라 목적에 비해 지나치게 넓은 처리와 불필요한 데이터 축적을 줄이는 문제이기도 합니다.</p></section>
+<section><h2>공공 얼굴인식의 법적 검토는 ‘카메라 설치’보다 더 세밀해야 한다</h2><div class="steps"><div class="step"><span>1</span><div><h3>목적</h3><p>일반적 범죄예방인지, 특정 중대범죄 수사인지, 실종자 수색인지 목적을 구체화합니다.</p></div></div><div class="step"><span>2</span><div><h3>법적 근거</h3><p>CCTV 설치 근거와 생체인식정보 생성·대조의 근거를 각각 확인합니다.</p></div></div><div class="step"><span>3</span><div><h3>대상</h3><p>불특정 다수 전체를 분석하는지, 특정 사건과 관련된 제한된 대상만 확인하는지 구분합니다.</p></div></div><div class="step"><span>4</span><div><h3>공간·시간</h3><p>전국·상시인지, 특정 장소·기간인지에 따라 침해 정도가 달라집니다.</p></div></div><div class="step"><span>5</span><div><h3>데이터베이스</h3><p>누구의 얼굴과 대조하는지, 목록의 정확성·갱신·삭제 기준을 확인합니다.</p></div></div><div class="step"><span>6</span><div><h3>후속조치</h3><p>알림만 제공하는지, 현장 검문·출입제한·수사착수로 이어지는지 살펴봅니다.</p></div></div><div class="step"><span>7</span><div><h3>권리구제</h3><p>오인식 통지, 이의제기, 인간의 재검토, 기록 정정·삭제 절차를 둡니다.</p></div></div></div></section>
+<section><h2>영상과 얼굴 특징정보는 보관·접근도 다르게 설계할 필요가 있다</h2><p>개인정보 보호법 제25조와 시행령은 CCTV 운영자가 촬영시간·보관기간·보관장소·처리방법, 영상정보 접근권한, 열람 요구에 대한 조치, 기술적·관리적·물리적 보호조치 등을 포함한 운영·관리 방침을 마련하도록 합니다. 얼굴인식이 추가되면 여기에 식별용 특징정보와 대조기록이라는 새로운 데이터가 생길 수 있습니다.</p><p>원본 영상은 일정 기간 뒤 지워지는데 얼굴 특징값이나 대조 로그는 더 오래 남는다면 실제 감시 데이터의 수명은 더 길어질 수 있습니다. 누가 검색할 수 있는지, 검색기록을 남기는지, 특징정보를 재사용하거나 다른 데이터베이스와 결합할 수 있는지, 목적이 끝났을 때 자동 삭제되는지까지 설계 단계에서 정해야 합니다.</p><p>생체정보는 비밀번호와 달리 유출됐다고 얼굴을 바꿀 수 없습니다. 개인정보위가 생체정보의 유일성과 불변성을 반복해서 강조하는 이유도 이런 회복의 어려움 때문입니다.</p></section>
+<section><h3 class="r2-sub">수사 목적이라고 해도 ‘모든 사람을 계속 식별’하는 것과 같지 않다</h3><p>법은 범죄 예방과 수사를 중요한 공익으로 인정합니다. 개인정보 보호법 제25조가 범죄 예방·수사를 CCTV 설치의 예외 사유로 두고 있고, 제18조도 공공기관이 범죄 수사에 필요한 경우 목적 외 이용·제공이 가능한 경로를 둡니다.</p><p>그러나 특정 사건을 해결하기 위해 필요한 영상을 확인하는 것과, 앞으로 일어날 가능성이 있는 범죄를 막기 위해 모든 통행인의 얼굴을 상시 대조하는 것은 범위가 다릅니다. 후자는 아직 사건과 관련되지 않은 사람까지 지속적으로 분석합니다.</p><p>따라서 범죄 예방이라는 목적이 중요할수록 오히려 범위 설정이 구체적이어야 합니다. 어떤 범죄를 대상으로 하는지, 누구의 데이터베이스와 대조하는지, 얼마 동안 어떤 장소에서 작동하는지, 사람이 추가 확인하기 전에는 어떤 조치도 하지 않는지 같은 조건이 법적 정당성을 좌우할 수 있습니다.</p></section>
+<section><h2>얼굴인식 확대 논쟁은 ‘CCTV 찬반’으로 줄이면 핵심을 놓친다</h2><p>공공장소 얼굴인식의 쟁점은 카메라를 설치할 것인가만이 아닙니다. 이미 존재하는 영상을 자동 식별에 연결하면서 개인정보 처리의 강도가 얼마나 달라지는지, 그 추가 단계에 어떤 법적 근거와 절차를 요구할 것인지가 핵심입니다.</p><p>공공안전의 편익은 실제로 검증해야 하고, 프라이버시 침해도 막연한 불안으로만 다룰 수 없습니다. 특정한 범죄·장소·기간에 한정할지, 실시간 대조를 허용할지, 사람이 재확인할지, 오인식에 대한 이의제기를 어떻게 보장할지처럼 제도의 구체적 조건으로 논의를 내려와야 합니다.</p><div class="warning"><strong>현행법을 읽을 때의 핵심</strong><p>① CCTV 설치 근거, ② 얼굴 특징정보 생성·대조의 민감정보 처리 근거, ③ 당초 목적을 벗어나는 이용인지, ④ 범위와 기간이 필요한 수준인지, ⑤ 오인식과 권리구제 절차가 있는지를 별도로 확인해야 합니다.</p></div></section>
+<section>
+<h2>생활 속 네 장면, 허용 여부는 무엇에 따라 달라질까요</h2>
+<div class="case-grid">
+<article class="case-card"><small>장면 01 · 지하철역</small><h3>사고 당시 영상을 되돌려 보는 경우</h3><p>역에서 넘어져 다친 승객의 사고 경위를 확인하려고 사고 시각 전후의 저장 영상을 확인합니다. 설치·이용 목적과 관련 있는지, 확인·제공의 범위가 필요한 수준인지를 따집니다. <strong>기록 확인과 상시 얼굴 검색은 구분</strong>해야 합니다.</p></article>
+<article class="case-card"><small>장면 02 · 상가 출입구</small><h3>기존 CCTV에 얼굴인식 프로그램을 추가하는 경우</h3><p>절도 예방을 이유로 방문자 전원의 얼굴 특징값을 만들어 명단과 대조합니다. 기존 카메라 설치가 적법하더라도 <strong>특징정보 생성·대조의 법적 근거</strong>와 목적 변경 문제를 새로 검토해야 합니다.</p></article>
+<article class="case-card"><small>장면 03 · 건물 출입</small><h3>직원 얼굴로 문을 여는 경우</h3><p>특정 직원이 등록한 얼굴을 그 직원의 출입 때 1:1로 비교합니다. 공개된 도로의 불특정 통행인 추적과 위험 구조는 다르지만, 인증용 특징정보 처리라면 민감정보 규칙이 사라지는 것은 아닙니다.</p></article>
+<article class="case-card"><small>장면 04 · 거리 수색</small><h3>수배자를 찾기 위해 다수의 얼굴을 실시간 대조하는 경우</h3><p>공익 목적이 있더라도 분석 대상은 사건과 무관한 통행인까지 확장됩니다. 누가 어떤 명단을 쓰고, 얼마 동안 가동하며, 경보를 어떤 사람이 재확인하는지가 핵심입니다. <strong>상시 감시를 자동 허용한다는 조항은 아닙니다.</strong></p></article>
+</div>
+<p class="evidence">위 사례는 법적 판단 요소를 설명하기 위한 가상 상황입니다. 실제 개별 사건의 적법성 결론은 설치 주체·업무·법적 권한·정보 처리 범위 등에 따라 달라집니다.</p>
+</section>
+<section class="final"><h2>공공 얼굴인식의 법적 질문은 ‘찍어도 되는가’에서 끝나지 않는다</h2><p>2026년 현행법상 공개된 장소의 CCTV는 범죄예방·수사 등 일정한 목적에서 설치할 수 있습니다. 그러나 영상에서 얼굴 특징을 추출해 특정인을 식별하려는 순간 민감정보 처리 문제가 추가됩니다. 그래서 공공 얼굴인식의 합법성을 판단하려면 카메라 설치의 근거만이 아니라 생체인식정보 처리의 근거, 목적 제한, 필요성·비례성, 데이터 최소화, 보관과 접근, 오인식에 대한 인간의 재검토와 이의제기까지 함께 봐야 합니다.</p><p>같은 카메라라도 단순히 기록하는 카메라와 사람을 자동으로 찾아내는 카메라는 법적으로 같은 질문을 던지지 않습니다.</p></section>
+<section class="source"><strong>근거와 함께 읽기</strong><ul>
+<li><a href="https://www.law.go.kr/lsLawLinkInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=900078309" target="_blank" rel="noopener">국가법령정보센터 · 개인정보 보호법 제18조 — 목적 외 이용·제공 제한(2026-09-11 시행)</a></li>
+<li><a href="https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=1029331799" target="_blank" rel="noopener">국가법령정보센터 · 개인정보 보호법 제25조 — CCTV 설치·운영(2026-09-11 시행)</a></li>
+<li><a href="https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1029907813" target="_blank" rel="noopener">국가법령정보센터 · 개인정보 보호법 시행령 제18조 — 민감정보 범위(2026-09-11 시행)</a></li>
+<li><a href="https://law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=66991" target="_blank" rel="noopener">국가법령정보센터 · 시행령 제25조 — 영상정보 운영·관리 방침</a></li>
+<li><a href="https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&amp;mCode=C020010000&amp;nttId=7530" target="_blank" rel="noopener">개인정보보호위원회 · 생체정보 보호 가이드라인 개정(2021-09-08)</a></li>
+<li><a href="https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=1027191397" target="_blank" rel="noopener">국가법령정보센터 · 개인정보 보호법 제25조 — 고정형 영상정보처리기기</a></li>
+<li><a href="https://law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=1000575255" target="_blank" rel="noopener">국가법령정보센터 · 개인정보 보호법 제23조 — 민감정보 처리 제한</a></li>
+<li><a href="https://law.go.kr/lsLawLinkInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=900194861" target="_blank" rel="noopener">국가법령정보센터 · 개인정보 보호법 시행령 제18조 — 민감정보의 범위</a></li>
+<li><a href="https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&amp;mCode=C020010000&amp;nttId=12122" target="_blank" rel="noopener">개인정보보호위원회 · 2026년 휴대전화 개통 안면인증 개선 권고</a></li>
+<li><a href="https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&amp;mCode=C020010000&amp;nttId=8925" target="_blank" rel="noopener">개인정보보호위원회 · 실시간 얼굴인식 기술 등 생체정보 법·제도 연구</a></li>
+<li><a href="/personal-data-breach">Re:Law · 개인정보 유출</a></li><li><a href="/ai-personal-data-purpose-use">Re:Law · AI 개발과 개인정보 목적 외 이용</a></li></ul></section>
+</main><script id="s4-stdict-search-js" src="/assets/common/stdict-search.js?v=20260927v1" defer></script>
+</body></html>
