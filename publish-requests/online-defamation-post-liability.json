@@ -1,0 +1,45 @@
+{
+  "schema": "4th-season.public-article-request/v2",
+  "operation": "CONTENT_UPDATE",
+  "article_id": "RELAW-016",
+  "slug": "online-defamation-post-liability",
+  "parent_map": "world/relaw/digital",
+  "cover": "assets/relaw/revisions/online-defamation-post-liability/RELAW-016-CORAL-R3-20261117-001/cover.webp",
+  "marker": "RELAW_016_ONLINE_DEFAMATION_R3_20261117",
+  "job_id": "RELAW-016-CORAL-R3-20261117-001",
+  "source_repo": "4th-season/4th-season-pages-relaw",
+  "release_guard": {
+    "expected_registered": true,
+    "expected_article_blob_sha": "119e48982a9f0eb200a95b3c4563664f01682b5b",
+    "registry_snapshot_sha_for_audit": "0678d24140d688bb9117182f3d437fef149dfca4",
+    "locked": {
+      "article_id": "RELAW-016",
+      "canonical_path": "/online-defamation-post-liability",
+      "physical_path": "online-defamation-post-liability.html",
+      "parent_map": "world/relaw/digital"
+    }
+  },
+  "content": {
+    "html": "revisions/online-defamation-post-liability/RELAW-016-CORAL-R3-20261117-001.html",
+    "html_sha256": "fd3ad7467a121eba04654447eb3fa7482e2b7e569ffadce20062b1a2fd743e84",
+    "h1": "온라인 명예훼손",
+    "h1_count": 1,
+    "h2_max": 10,
+    "assets": [
+      {
+        "path": "assets/relaw/revisions/online-defamation-post-liability/RELAW-016-CORAL-R3-20261117-001/cover.webp",
+        "sha256": "e63f58afac5ce025f847f0339f93565c5f6ebdf6dde24ef8f5c58dc9bb5fc4e4",
+        "bytes": 1114
+      }
+    ]
+  },
+  "update_policy": {
+    "registry_count_delta": 0,
+    "hub_count_delta": 0,
+    "new_route_policy": "STAGED_ARTICLE_AND_ASSETS",
+    "retain_old_article_route": true,
+    "restore_previous_release_on_failure": true,
+    "require_direct_http_200": true,
+    "require_public_qa_pass": true
+  }
+}
